@@ -7,6 +7,24 @@ h1 {
     font-family: 'VT323', monospace;
 }
 
-.main-image img{
+.main-image img {
     width: 100%;
+}
+
+.place-card {
+    position: relative;
+    margin-top: 24px;
+}
+
+.place-description h2 {
+    font-family: 'VT323', monospace;
+}
+
+.place-description {
+    
+    position: absolute;
+    bottom: 0.5em;
+    left: 1em;
+    padding: 12px 12px;
+
 }
