@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <title>RAN TEST</title>
 </head>
 <body>
@@ -19,7 +21,7 @@
         
         <div class="row header">
             <div class="col-sm-12">
-                <h1>Riga at Night Test</h1>
+                <h1>R(iga)at Night | last updated: 13 Feb 2023, 22:30</h1>
             </div>
         </div>
 
@@ -39,5 +41,18 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", user => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
+      
 </body>
 </html>
