@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+}
+
+.main-image img{
+    width: 100%;
+}
